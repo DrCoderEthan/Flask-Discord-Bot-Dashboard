@@ -11,5 +11,6 @@ _The Project is Far From Done!_
 
 _`Current Status : Not completed 🔴`_
 
+Dashboard View
 ![Dashboard View](https://cdn.discordapp.com/attachments/885938706568077323/935181350418415626/unknown.png)
 
