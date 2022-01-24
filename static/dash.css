@@ -82,9 +82,8 @@ ol li{
 
 
 .temp-box{
-    padding: 20px;
+    padding: 10px;
     text-align: center;
-    border: 10px solid white;
     border-radius: 40px;
     padding: 50px;
     margin: 20px;
@@ -94,6 +93,9 @@ ol li{
 .temp-box a{
     color: rgb(235, 232, 232);
     text-decoration: none;
+}
+.temp-box img{
+    border-radius: 20px;
 }
 .header {
   padding: 200px;
@@ -114,7 +116,26 @@ h4{
 }
 .guilds ol{
     position: absolute;
-    top: 40%;
+    top: 45%;
     background: #212325b9;
     border-radius: 30px;
+
 }
+.server-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.server-name{
+    position: absolute;
+    top: 35%;
+    background: #212325b9;
+    color: white;
+    font-size: 35px;
+    line-height: 60px;
+    padding: 0 70px;
+    font-weight: bold;
+    border-radius: 10px;
+    
+}
+/* css responsive */

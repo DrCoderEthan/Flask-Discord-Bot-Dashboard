@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/dash.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <nav>
@@ -23,10 +24,16 @@
         <p>{{userdata['username']}}#{{userdata['discriminator']}}</p>
     </div>
     <br>
+    <div class="server-container">
+        <div class="server-name">
+            <p><i class="fa fa-server" aria-hidden="true"></i> Servers</p>
+        </div> 
+    </div>
+
     <div class="guilds">
         <ol>
         {% for guild in guilds %}
-            <li class="temp-box"><a href="/guild/{{guild['id']}}"><img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon"><br>{{guild['name']}}</a></li>
+            <li class="temp-box"><a href="/guild/{{guild['id']}}"><img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon"><br><br>{{guild['name']}}</a></li>
         {% endfor %}
         </ol>
 
