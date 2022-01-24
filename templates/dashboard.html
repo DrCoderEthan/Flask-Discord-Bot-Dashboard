@@ -18,13 +18,20 @@
         </ul>
     </nav>
     <br>
-    <h4>Get Access to Your Server</h4>
+    <div class="logo">
+        <img src="https://cdn.discordapp.com/avatars/{{userdata['id']}}/{{userdata['avatar']}}.png" alt="usericon">
+        <p>{{userdata['username']}}#{{userdata['discriminator']}}</p>
+    </div>
     <br>
-    <ol>
+    <div class="guilds">
+        <ol>
         {% for guild in guilds %}
             <li class="temp-box"><a href="/guild/{{guild['id']}}"><img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon"><br>{{guild['name']}}</a></li>
         {% endfor %}
-    </ol>
+        </ol>
+
+    </div>
+
 
 </body>
 </html>

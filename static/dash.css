@@ -56,11 +56,36 @@ ol li{
     float: left;
     margin-right: 30px;
 }
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    border-radius: 50px;
+    border: 3px solid #0082e6;
+    top: 15%;
+    position: absolute;
+    left: 30%;
+}
+.logo p{
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+
+
 .temp-box{
     padding: 20px;
     text-align: center;
-    border: 15px solid white;
-    border-radius: 20px;
+    border: 10px solid white;
+    border-radius: 40px;
     padding: 50px;
     margin: 20px;
     color: whitesmoke;
@@ -80,4 +105,16 @@ ol li{
 h4{
     color: white;
     padding: 20px;
+}
+.guilds{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.guilds ol{
+    position: absolute;
+    top: 40%;
+    background: #212325b9;
+    border-radius: 30px;
 }
