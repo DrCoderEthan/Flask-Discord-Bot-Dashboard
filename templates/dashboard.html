@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/dash.css">
+</head>
+<body>
+    <nav>
+        <label class="Logo">Jarvis-bot</label>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://jarvis-bot.netlify.app/cmd.htm">Commands</a></li>
+            <li><a href="https://jarvis-bot.netlify.app/policy.htm">Policy</a></li>
+            <li><a href="#"><img src="https://cdn.discordapp.com/avatars/{{userdata['id']}}/{{userdata['avatar']}}.png" alt="icon" class="user-img"></a></li>
+        </ul>
+    </nav>
+    <br>
+    <h4>Get Access to Your Server</h4>
+    <br>
+    <ol>
+        {% for guild in guilds %}
+            <li class="temp-box"><a href="/guild/{{guild['id']}}"><img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon"><br>{{guild['name']}}</a></li>
+        {% endfor %}
+    </ol>
+
+</body>
+</html>

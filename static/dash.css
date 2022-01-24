@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #2c3e50;
+    
+}
+
+nav{ 
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.Logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.user-img{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    border-radius: 40px;
+    height: 50%;
+    width: 30%;
+    position: relative;
+    top: 15px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+ol li{
+    float: left;
+    margin-right: 30px;
+}
+.temp-box{
+    padding: 20px;
+    text-align: center;
+    border: 15px solid white;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 20px;
+    color: whitesmoke;
+
+}
+.temp-box a{
+    color: rgb(235, 232, 232);
+    text-decoration: none;
+}
+.header {
+  padding: 200px;
+  text-align: center;
+  background: #2c3e50;
+  color: white;
+  font-size: 30px;
+}
+h4{
+    color: white;
+    padding: 20px;
+}

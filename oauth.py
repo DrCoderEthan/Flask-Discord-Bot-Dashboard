@@ -55,5 +55,10 @@ class Oauth:
     @staticmethod
     def get_mutual_guilds(user_guilds :list, bot_guilds :list):
         return [guild for guild in user_guilds if guild['id'] in map(lambda i: i['id'], bot_guilds) and (guild['permissions'] & 0x20) == 0x20]
-
-
+    
+    @staticmethod
+    def get_guild_data(guild_id:int, token:str):
+        bot_token = os.environ['BOT_TOKEN']
+        response = requests.get(f'{Oauth.discord_api_url}/v6/guilds/{guild_id}', headers={"Authorization":f"Bot {bot_token}"})
+        response.raise_for_status()
+        return response.json()

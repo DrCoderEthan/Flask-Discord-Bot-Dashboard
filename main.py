@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from flask import *
 from oauth import Oauth
 from dotenv import load_dotenv
@@ -33,9 +34,14 @@ def dashboard():
     user_guilds_data  = Oauth.get_user_guild(session.get('token'))
     bot_guilds = Oauth.get_bot_guilds()
     mutual_bot_guilds = Oauth.get_mutual_guilds(user_guilds_data, bot_guilds)
-    return jsonify(mutual_bot_guilds)
+    return render_template('dashboard.html', guilds=mutual_bot_guilds, userdata=user_data)
 
-
+@app.route('/guild/<guild_id>')
+def guild(guild_id: int):
+    guild_info = Oauth.get_guild_data(guild_id, session.get('token'))
+    if not guild_info:
+        return redirect('/dashboard')
+    return render_template('guilds.html', guild=guild_info)
 
 
 
