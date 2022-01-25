@@ -10,6 +10,12 @@
 
 </head>
 <body>
+    <script>
+        function getOption(option) {
+        if (option.value === "disable-slct") { return document.querySelector(".whenEnabled").hidden = true }
+        else { return document.querySelector(".whenEnabled").hidden = false }
+        }
+    </script>
     <nav>
         <label class="Logo">Jarvis-bot</label>
         <ul>
@@ -36,28 +42,39 @@
                 <input type="submit" value="Update" id="update-btn" name="Update">
                 <br>
                 <br>
-
                 <p id="greet-txt">Welcome & Leave</p>
-                <form action="">
-                    <select name="cars" id="enable-disable" onchange="getOption(this)">
+                <select name="cars" id="enable-disable" onchange="getOption(this)">
                     <option value="enable-slct">Enable</option>
                     <option value="disable-slct">Disable</option>
-                </form>
+                </select>
                 <br>
+                <div class="whenEnabled">
+                    <label for="Channel-name">Channel-Name</label>
+                    <select name="channel-select" id="channel-select">
+                        <option value="1"># Welcome</option>
+                        <option value="2"># leave</option>
+                        <option value="3"># General</option>
+                    </select>
+                    <label for="bg-mode", id="bg-mode-txt">Background-Mode</label>
+                    <select name="channel-select" id="bg-mode">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <label for="bg-mode", id="leave-channel-txt">Leave Channel</label>
+                    <select name="channel-select" id="leave-channel">
+                        <option value="1"># Leave-1</option>
+                        <option value="2"># Leave-2</option>
+                        <option value="3"># General</option>
+                    </select>
+                </div>
+                
                 <br>
-
             </form>
         </div>
     </div>
 
-    <script>
-        function getOption(el) {
-            const option = el.value;
-            if (option === 'esc') return
-                console.log(option);
-            return option;
-            }
-    </script>
+
 
 </body>
 </html>

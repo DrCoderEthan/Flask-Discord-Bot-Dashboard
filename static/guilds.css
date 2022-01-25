@@ -123,6 +123,7 @@ ol li{
 }
 .text-area .text-area-color label{
     position: absolute;
+    top: 3%;
     left: 5%;
     color: white;
     font-size: 25px;
@@ -132,18 +133,18 @@ ol li{
 }
 .text-area-color #prefix{
     position: absolute;
-    top: 12%;
+    top: 8%;
     left: 37%;
     background: #424a52b9;
     border: none;
     border-radius: 30px;
-    height: 10%;
+    height: 7%;
     color: white;
 }
 .text-area-color #update-btn{
     position: absolute;
     border: none;
-    top: 12%;
+    top: 7%;
     left: 75%;
     background: #43ce4ab9;
     color: rgb(255, 255, 255);
@@ -170,7 +171,7 @@ ol li{
 }
 .text-area-color #enable-disable{
     position: absolute;
-    top: 34%;
+    top: 25%;
     left: 60%;
     height: 9%;
     background: #424a52b9;
@@ -180,5 +181,67 @@ ol li{
     font-weight: lighter;
     border-radius: 5px;
     width: 20%;
+    cursor: pointer;
+}
+.text-area-color .whenEnabled{
+    
 
+}
+.text-area-color .whenEnabled label{
+    position: absolute;
+    font-weight: 50;
+    top: 35%;
+}
+.text-area-color .whenEnabled select{
+    position: absolute;
+    top: 44%;
+    left: 60%;
+    background: #424a52b9;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border-radius: 5px;
+    height: 5%;
+    width: 20%;
+    cursor: pointer;
+}
+
+.text-area-color .whenEnabled #bg-mode-txt{
+    position: absolute;
+    font-weight: 50;
+    top: 50%;
+}
+.text-area-color .whenEnabled #bg-mode{
+    position: absolute;
+    top: 58%;
+    left: 60%;
+    background: #424a52b9;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border-radius: 5px;
+    height: 5%;
+    width: 20%;
+    cursor: pointer;
+}
+.text-area-color .whenEnabled #leave-channel-txt{
+    position: absolute;
+    font-weight: 50;
+    top: 65%;
+}
+.text-area-color .whenEnabled #leave-channel{
+    position: absolute;
+    top: 73%;
+    left: 60%;
+    background: #424a52b9;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border-radius: 5px;
+    height: 5%;
+    width: 20%;
+    cursor: pointer;
 }
