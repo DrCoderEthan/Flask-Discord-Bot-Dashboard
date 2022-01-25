@@ -4,12 +4,60 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="/static/guilds.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>{{guild['name']}} Dashboard</title>
+
 </head>
 <body>
-    <h1>Settings For : {{guild['name']}}</h1>
-    <img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon">
+    <nav>
+        <label class="Logo">Jarvis-bot</label>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="https://jarvis-bot.netlify.app/cmd.htm">Commands</a></li>
+            <li><a href="https://jarvis-bot.netlify.app/policy.htm">Policy</a></li>
+            <li><a href="#"><img src="https://cdn.discordapp.com/avatars/{{userdata['id']}}/{{userdata['avatar']}}.png" alt="icon" class="user-img"></a></li>
+        </ul>
+    </nav>
 
-    Now u can modify server setttings here !
+    <div class="guild-container">
+        <div class="server-name">
+            <p><i class="fa fa-server" aria-hidden="true"></i> {{guild['name']}}</p>
+        </div>
+        <img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon">
+    </div>
+
+    <div class="text-area">
+        <div class="text-area-color">
+            <form>
+                <label for="prefix">Server Prefix</label>
+                <input type="text" id="prefix" name="prefix" placeholder="   ?"><br>
+                <label for="Update"></label>
+                <input type="submit" value="Update" id="update-btn" name="Update">
+                <br>
+                <br>
+
+                <p id="greet-txt">Welcome & Leave</p>
+                <form action="">
+                    <select name="cars" id="enable-disable" onchange="getOption(this)">
+                    <option value="enable-slct">Enable</option>
+                    <option value="disable-slct">Disable</option>
+                </form>
+                <br>
+                <br>
+
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function getOption(el) {
+            const option = el.value;
+            if (option === 'esc') return
+                console.log(option);
+            return option;
+            }
+    </script>
+
 </body>
 </html>

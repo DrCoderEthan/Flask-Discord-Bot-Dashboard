@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,100&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background: #2c3e50;
+    
+}
+
+nav{ 
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+}
+label.Logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 30px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+.user-img{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+    border-radius: 40px;
+    height: 50%;
+    width: 30%;
+    position: relative;
+    top: 15px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+ol li{
+    float: left;
+    margin-right: 30px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img{
+    border-radius: 50px;
+    border: 3px solid #0082e6;
+    top: 15%;
+    position: absolute;
+    left: 30%;
+}
+.logo p{
+    position: absolute;
+    top: 20%;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+
+}
+.guild-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.guild-container .server-name p{
+    background: #212325b9;
+    color: white;
+    position: absolute;
+    top: 18%;
+    left: 30%;
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+    border-radius: 30px;
+
+}
+.guild-container img{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    border: 4px solid #0082e6;
+    border-radius: 30px;
+}
+.text-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.text-area .text-area-color{
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    line-height: 100px;
+    padding: 0 250px;
+    background: #212325b9;
+    color: white;
+
+}
+.text-area .text-area-color label{
+    position: absolute;
+    left: 5%;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    border-radius: 30px;
+
+}
+.text-area-color #prefix{
+    position: absolute;
+    top: 12%;
+    left: 37%;
+    background: #424a52b9;
+    border: none;
+    border-radius: 30px;
+    height: 10%;
+    color: white;
+}
+.text-area-color #update-btn{
+    position: absolute;
+    border: none;
+    top: 12%;
+    left: 75%;
+    background: #43ce4ab9;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    height: 10%;
+    width: 20%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.text-area-color #greet-txt{
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+    font-size: 25px;
+    font-weight: lighter;
+    border-radius: 30px;
+}
+.text-area-color #enable{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+.text-area-color #enable-disable{
+    position: absolute;
+    top: 34%;
+    left: 60%;
+    height: 9%;
+    background: #424a52b9;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    border-radius: 5px;
+    width: 20%;
+
+}
