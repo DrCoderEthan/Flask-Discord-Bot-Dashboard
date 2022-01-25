@@ -14,5 +14,6 @@ _`Current Status : Not completed 🔴`_
 Dashboard View
 ![Dashboard View](https://cdn.discordapp.com/attachments/885938706568077323/935181350418415626/unknown.png)
 
-Started working on the guild Ui For Dashboard
-![Dashboard Guild View](https://cdn.discordapp.com/attachments/785743227625406464/935591088914309141/unknown.png)
+**Started working on the guild Ui For Dashboard**
+
+![Dashboard Guild View](https://cdn.discordapp.com/attachments/785743227625406464/935591789337911378/chrome-capture.gif)
