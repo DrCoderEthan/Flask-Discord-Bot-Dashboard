@@ -39,38 +39,69 @@
                 <label for="prefix">Server Prefix</label>
                 <input type="text" id="prefix" name="prefix" placeholder="   ?"><br>
                 <label for="Update"></label>
-                <input type="submit" value="Update" id="update-btn" name="Update">
+                <button id="update-btn">Update</button>
                 <br>
-                <br>
-                <p id="greet-txt">Welcome & Leave</p>
-                <select name="cars" id="enable-disable" onchange="getOption(this)">
-                    <option value="enable-slct">Enable</option>
-                    <option value="disable-slct">Disable</option>
-                </select>
-                <br>
-                <div class="whenEnabled">
-                    <label for="Channel-name">Channel-Name</label>
-                    <select name="channel-select" id="channel-select">
-                        <option value="1"># Welcome</option>
-                        <option value="2"># leave</option>
-                        <option value="3"># General</option>
-                    </select>
-                    <label for="bg-mode", id="bg-mode-txt">Background-Mode</label>
-                    <select name="channel-select" id="bg-mode">
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    <label for="bg-mode", id="leave-channel-txt">Leave Channel</label>
-                    <select name="channel-select" id="leave-channel">
-                        <option value="1"># Leave-1</option>
-                        <option value="2"># Leave-2</option>
-                        <option value="3"># General</option>
-                    </select>
-                </div>
-                
                 <br>
             </form>
+        </div>
+    </div>
+    <div class="text-area-greet">
+        <div class="greet-area">
+            <p id="greet-txt">Welcome & Leave</p>
+            <select name="cars" id="enable-disable" onchange="getOption(this)">
+                <option value="enable-slct">Enable</option>
+                <option value="disable-slct">Disable</option>
+            </select>
+            <br>
+            <div class="whenEnabled">
+                <label for="Channel-name">Channel-Name</label>
+                <select name="channel-select" id="channel-select">
+                    <option value="1"># Welcome</option>
+                    <option value="2"># leave</option>
+                    <option value="3"># General</option>
+                </select>
+                <label for="bg-mode", id="bg-mode-txt">Background-Mode</label>
+                <select name="channel-select" id="bg-mode">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label for="bg-mode", id="leave-channel-txt">Leave Channel</label>
+                <select name="channel-select" id="leave-channel">
+                    <option value="1"># Leave-1</option>
+                    <option value="2"># Leave-2</option>
+                    <option value="3"># General</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="text-area-logs">
+        <div class="logs-area">
+            <p id="log-greet-txt">Logs</p>
+            <select name="cars" id="logs-enable-disable" onchange="getOptionforlogs(this)">
+                <option value="enable-slct">Enable</option>
+                <option value="disable-slct">Disable</option>
+            </select>
+            <br>
+            <div class="when-logs-enabled">
+                <label for="logs-channel-select" id="logs-channel-txt">Log Channel</label>
+                <select name="nothing" id="logs-channel-select">
+                    <option value="1"># Logs</option>
+                    <option value="2"># Mod Logs</option>
+                    <option value="3"># Bot-Logs</option>
+                </select>
+
+            </div>
+            <br>
+            
+        </div>
+        
+
+    </div>
+
+
+                
+                <br>
         </div>
     </div>
 

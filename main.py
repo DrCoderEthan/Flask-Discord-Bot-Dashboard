@@ -46,7 +46,6 @@ def guild(guild_id: int):
 
 
 
-    
 
 # Server Runner
 if __name__ == "__main__":
