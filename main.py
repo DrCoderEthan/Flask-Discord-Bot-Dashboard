@@ -40,9 +40,10 @@ def dashboard():
 def guild(guild_id: int):
     user_data = Oauth.get_user_json(session.get('token'))
     guild_info = Oauth.get_guild_data(guild_id, session.get('token'))
+    channels = Oauth.get_channel_from_guild(guild_id)
     if not guild_info:
         return redirect('/dashboard')
-    return render_template('guilds.html', guild=guild_info, userdata=user_data)
+    return render_template('guilds.html', guild=guild_info, userdata=user_data, channel=channels)
 
 
 

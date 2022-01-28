@@ -56,9 +56,9 @@
             <div class="whenEnabled">
                 <label for="Channel-name">Channel-Name</label>
                 <select name="channel-select" id="channel-select">
-                    <option value="1"># Welcome</option>
-                    <option value="2"># leave</option>
-                    <option value="3"># General</option>
+                    {% for channels in channel %}
+                    <option value="1">{{channels['name']}}</option>
+                    {% endfor %}
                 </select>
                 <label for="bg-mode", id="bg-mode-txt">Background-Mode</label>
                 <select name="channel-select" id="bg-mode">
@@ -68,9 +68,9 @@
                 </select>
                 <label for="bg-mode", id="leave-channel-txt">Leave Channel</label>
                 <select name="channel-select" id="leave-channel">
-                    <option value="1"># Leave-1</option>
-                    <option value="2"># Leave-2</option>
-                    <option value="3"># General</option>
+                    {% for channels in channel %}
+                    <option value="1">{{channels['name']}}</option>
+                    {% endfor %}
                 </select>
             </div>
         </div>
@@ -100,10 +100,17 @@
     </div>
 
 
+
+
+
+
+
                 
                 <br>
         </div>
     </div>
+
+    
 
 
 

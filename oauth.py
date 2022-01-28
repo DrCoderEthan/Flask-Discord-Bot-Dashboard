@@ -62,3 +62,10 @@ class Oauth:
         response = requests.get(f'{Oauth.discord_api_url}/v6/guilds/{guild_id}', headers={"Authorization":f"Bot {bot_token}"})
         response.raise_for_status()
         return response.json()
+    
+    @staticmethod
+    def get_channel_from_guild(guild_id:int):
+        bot_token = os.environ['BOT_TOKEN']
+        response = requests.get(f'{Oauth.discord_api_url}/guilds/{guild_id}/channels', headers={"Authorization":f"Bot {bot_token}"})
+        response.raise_for_status()
+        return response.json()
