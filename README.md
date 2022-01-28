@@ -16,4 +16,4 @@ Dashboard View
 
 **Started working on the guild Ui For Dashboard**
 
-![Dashboard Guild View](https://cdn.discordapp.com/attachments/785743227625406464/935591088914309141/unknown.png)
+![Dashboard Guild View](https://cdn.discordapp.com/attachments/885938706568077323/936206347903574086/unknown.png)
