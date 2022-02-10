@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 import os
 from pymongo import MongoClient
 
-db_url = 'mongodb+srv://Jarviswarn:warn789$@warn-jarvis.p0mcr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+db_url = 'url'
 cluster = MongoClient(db_url)
 database = cluster["Jarvis"]
 database = cluster['flaskapp']
