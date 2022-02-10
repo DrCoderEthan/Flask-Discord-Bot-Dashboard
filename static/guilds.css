@@ -317,3 +317,22 @@ ol li{
     width: 20%;
     cursor: pointer;
 }
+.update-btn-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.update-btn-action button{
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    border: none;
+    background: #43ce4ab9;
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    font-weight: bold;
+    height: 10%;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -66,14 +66,15 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-                <label for="bg-mode", id="leave-channel-txt">Leave Channel</label>
-                <select name="channel-select" id="leave-channel">
-                    {% for channels in channel %}
-                    <option value="1">{{channels['name']}}</option>
-                    {% endfor %}
-                </select>
+            </div>
+            <div class="update-btn-action">
+                <form action="/forward/", method="POST">
+                    <button aciton>Update</button>
+                </form>
             </div>
         </div>
+
+
     </div>
     <div class="text-area-logs">
         <div class="logs-area">

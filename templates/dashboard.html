@@ -33,7 +33,7 @@
     <div class="guilds">
         <ol>
         {% for guild in guilds %}
-            <li class="temp-box"><a href="/guild/{{guild['id']}}"><img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon"><br><br>{{guild['name']}}</a></li>
+            <li class="temp-box"><a href="/guild/guild_id={{guild['id']}}"><img src="https://cdn.discordapp.com/icons/{{guild['id']}}/{{guild['icon']}}.png" alt="icon"><br><br>{{guild['name']}}</a></li>
         {% endfor %}
         </ol>
 
